@@ -11,7 +11,7 @@ export default function Navbar() {
         <nav className="navbar">
             <div className="navbar-container">
                 <Link to="/" className="navbar-logo">
-                    <img src="/assignment1/srcignment1/src/assets/FANZONE.png" alt="FanZone Logo" className="logo" />
+                    <img src="/assignment1/src/assets/FANZONE.png" alt="FanZone Logo" className="logo" />
                     FanZone Central
                 </Link>
 

@@ -1,0 +1,282 @@
+/* Football-themed fonts */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700&display=swap');
+
+.favorites-page {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #0a4d3c 0%, #1a5f4f 50%, #2d7a63 100%);
+    padding: 2rem 1rem;
+    font-family: 'Inter', sans-serif;
+}
+
+.favorites-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header */
+.favorites-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.favorites-title {
+    font-size: 3rem;
+    color: #ffd700;
+    margin-bottom: 0.5rem;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4);
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 2px;
+}
+
+.favorites-subtitle {
+    color: #e8f5e9;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+/* Empty State */
+.empty-favorites {
+    background: white;
+    border-radius: 16px;
+    padding: 4rem 2rem;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    border: 2px solid #2d7a63;
+}
+
+.empty-icon {
+    font-size: 5rem;
+    margin-bottom: 1rem;
+}
+
+.empty-favorites h3 {
+    color: #0a4d3c;
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 1px;
+}
+
+.empty-favorites p {
+    color: #6b7280;
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+}
+
+/* Favorites Grid */
+.favorites-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+/* Favorite Card */
+.favorite-card {
+    background: white;
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    position: relative;
+    transition: all 0.3s ease;
+    border: 2px solid #e5e7eb;
+}
+
+.favorite-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(26, 95, 79, 0.3);
+    border-color: #ffd700;
+}
+
+.remove-btn {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    width: 32px;
+    height: 32px;
+    background: #ef4444;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.remove-btn:hover {
+    background: #dc2626;
+    transform: scale(1.1);
+}
+
+.favorite-card-header {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.favorite-team-logo {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    margin-bottom: 1rem;
+    border-radius: 12px;
+    border: 2px solid #e5e7eb;
+    padding: 8px;
+}
+
+.favorite-team-name {
+    color: #0a4d3c;
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin: 0;
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 1px;
+}
+
+.favorite-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.btn-small {
+    padding: 0.625rem 1rem;
+    font-size: 0.9rem;
+    width: 100%;
+    background: linear-gradient(135deg, #1a5f4f 0%, #2d7a63 100%);
+    color: #ffd700;
+    border: 2px solid #ffd700;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-small:hover {
+    background: linear-gradient(135deg, #0a4d3c 0%, #1a5f4f 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(255, 215, 0, 0.3);
+}
+
+/* Quick View Section */
+.quick-view-section {
+    background: white;
+    border-radius: 16px;
+    padding: 2rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    margin-top: 2rem;
+    border: 2px solid #2d7a63;
+}
+
+.quick-view-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 2px solid #e8f5e9;
+}
+
+.quick-view-title {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.quick-view-logo {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    border-radius: 8px;
+    border: 2px solid #2d7a63;
+    padding: 4px;
+}
+
+.quick-view-title h2 {
+    color: #0a4d3c;
+    font-size: 1.8rem;
+    margin: 0;
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 1px;
+}
+
+.close-quick-view {
+    padding: 0.75rem 1.5rem;
+    background: #6b7280;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.close-quick-view:hover {
+    background: #4b5563;
+    transform: translateY(-2px);
+}
+
+/* Quick View Tabs */
+.quick-view-tabs {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+}
+
+.quick-view-tabs .tab-btn {
+    padding: 0.875rem 2rem;
+    background: white;
+    border: 2px solid #e5e7eb;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    color: #0a4d3c;
+}
+
+.quick-view-tabs .tab-btn:hover {
+    border-color: #2d7a63;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(45, 122, 99, 0.2);
+}
+
+.quick-view-tabs .tab-btn.active {
+    background: linear-gradient(135deg, #1a5f4f 0%, #2d7a63 100%);
+    color: #ffd700;
+    border-color: #ffd700;
+    box-shadow: 0 4px 12px rgba(255, 215, 0, 0.4);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .favorites-title {
+        font-size: 2rem;
+    }
+
+    .favorites-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .quick-view-header {
+        flex-direction: column;
+        gap: 1rem;
+        text-align: center;
+    }
+
+    .quick-view-title {
+        flex-direction: column;
+    }
+
+    .quick-view-tabs {
+        justify-content: center;
+    }
+
+    .tab-btn {
+        flex: 1;
+        min-width: 100px;
+    }
+}

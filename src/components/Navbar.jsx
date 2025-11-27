@@ -17,7 +17,7 @@ export default function Navbar() {
 
                 <ul className="navbar-menu">
                     <li>
-                        <Link to="/" className={`navbar-link ${isActive('/')}`}>
+                        <Link to="/home" className={`navbar-link ${isActive('/home')}`}>
                             🏠 Home
                         </Link>
                     </li>

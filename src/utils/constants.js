@@ -34,7 +34,7 @@ export const WIDGET_THEMES = {
 
 // Routes
 export const ROUTES = {
-    HOME: '/',
+    HOME: '/home',
     SEARCH: '/search',
     TEAM: '/team/:teamId',
     COMPARE: '/compare',

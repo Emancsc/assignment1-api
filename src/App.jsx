@@ -9,6 +9,8 @@ import FavoritesPage from './pages/FavoritePage.jsx';
 
 import NewsPage from './pages/NewsPage.jsx';
 import TriviaPage from './pages/TriviaPage.jsx';
+import HomePage from './pages/HomePage.jsx';
+
 
 import './App.css';
 
@@ -31,6 +33,10 @@ export default function App() {
                     {/* New Pages */}
                     <Route path="/news" element={<NewsPage />} />
                     <Route path="/trivia" element={<TriviaPage />} />
+                    <Route path="/home" element={<HomePage />} />
+
+                    {/*<Route path="/home" element={<Navigate to="/home" replace />} />*/}
+
                 </Routes>
             </div>
         </BrowserRouter>

@@ -4,8 +4,6 @@ Group Members:
 
 Eman Alghalban - 1220611
 
-Aseel Qadah - 1223063
-
 APIs Used:
 
 API Sports
